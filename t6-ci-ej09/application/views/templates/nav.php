@@ -1,0 +1,3 @@
+<nav>
+<?= dibujarMenu($menu)?>
+</nav>

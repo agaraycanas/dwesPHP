@@ -7,3 +7,5 @@
 <form action="seeTasks.php">
 <input type="submit" value="Ver tareas"/>
 </form>
+
+<h6>Recuerda limpiar las cookies antes de la primera ejecución</h6>

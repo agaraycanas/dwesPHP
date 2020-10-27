@@ -1,3 +1,3 @@
 <?php
-header('Location:inicializar.php');
+header('Location:grafico');
 ?>

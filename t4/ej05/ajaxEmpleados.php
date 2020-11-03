@@ -109,7 +109,7 @@ function generarXML($filas, $cabeceraTabla = []) {
 if (! esAJAX ()) {
 	echo '<h1>S&oacute peticiones AJAX </h1>';
 } else {
-	// echo generarHTML ( getResultadoConsulta ( $_REQUEST ['filtro'], $_REQUEST ['palabra'] ) );
-	echo generarXML ( getResultadoConsulta ( $_REQUEST ['filtro'], $_REQUEST ['palabra'] ) );
+	 echo generarHTML ( getResultadoConsulta ( $_REQUEST ['filtro'], $_REQUEST ['palabra'] ) );
+	//echo generarXML ( getResultadoConsulta ( $_REQUEST ['filtro'], $_REQUEST ['palabra'] ) );
 }
 ?>

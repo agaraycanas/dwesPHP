@@ -1,7 +1,7 @@
 <head>
 <meta charset="utf-8">
 
-<script type="text/javascript" src="http://form-serialize.googlecode.com/svn/trunk/serialize-0.2.min.js" ></script>
+<script type="text/javascript" src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/form-serialize/serialize-0.2.min.js" ></script>
 <script type="text/javascript">
 
 	var conexion;

@@ -66,6 +66,8 @@ echo <<<OUT
 <input type="submit" id="bEntrar" value="$lEntrar">
 		
 </form>		
+
+<h6>Usuarios(contraseñas) válidos: pepe(pp) y ana(a)
 </body>
 OUT;
 ?>

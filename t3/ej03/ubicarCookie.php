@@ -4,8 +4,8 @@ $contenido = isset ( $_GET ['contenido'] ) ? $_GET ['contenido'] : null;
 $nivel = isset ( $_GET ['nivel'] ) ? $_GET ['nivel'] : null;
 
 if ($nombre != null && $contenido != null && $nivel != null) {
-	$rutaBase = pathinfo($_SERVER['REQUEST_URI'])['dirname'];
-	$ruta = ($nivel==0?
+    $rutaBase = pathinfo($_SERVER['REQUEST_URI'])['dirname'];
+    $ruta = ($nivel==0?
 			$rutaBase.'/':
 				($nivel==1?$rutaBase.'/uno/':
 						$rutaBase.'/uno/dos/'));

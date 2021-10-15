@@ -1,22 +1,26 @@
-<?php
+<?php 
 
-if (!isset($_COOKIE['numeros'])) {
-    echo '<h1>ERROR</h1>';
-}
-else {
-    $ns = ltrim($_COOKIE['numeros'],'-');
-    $ns = rtrim($ns,'-');
-    $ns = explode('-',$ns);
-    $akns = array_keys($ns);
-    $suma = 0;
-    echo '<h2>';
-    foreach ($ns as $k => $n) {
-        echo $n . ($k === end($akns) ? '' :' + ');
-        $suma += $n;
+function suma($sumandos) {
+    $suma=0;
+    foreach ($sumandos as $s) {
+        $suma += $s;
     }
-    echo ' = ' . $suma;
-    echo '<br/>';
-    echo '<a href="uno.php">Volver</a>';
-    echo '</h2>';
+    return $suma;
 }
+
+$sumandos = isset($_COOKIE['sumandos']) ? unserialize($_COOKIE['sumandos']) : [];
 ?>
+
+<h1>
+
+<?php foreach ($sumandos as $k => $sumando): ?> 
+    <?php $simbolo = ($k == sizeof($sumandos)-1) ? '=' : '+'; ?>
+    <?= $sumando.$simbolo ?>
+<?php endforeach;?>
+
+<?= suma($sumandos)?>
+
+</h1>
+<a href="uno.php">Volver</a>
+
+

@@ -1,6 +1,4 @@
 <?php 
-session_start();
-
 function suma($sumandos) {
     $suma=0;
     foreach ($sumandos as $s) {
@@ -8,16 +6,17 @@ function suma($sumandos) {
     }
     return $suma;
 }
+
+$sumandos = isset($_GET['sumandos'])?unserialize($_GET['sumandos']):[];
 ?>
 
 <h1>
-
-<?php foreach ($_SESSION['sumandos'] as $k => $sumando): ?> 
-    <?php $simbolo = ($k == sizeof($_SESSION['sumandos'])-1) ? '=' : '+'; ?>
+<?php foreach ($sumandos as $k => $sumando): ?> 
+    <?php $simbolo = ($k == sizeof($sumandos)-1) ? '=' : '+'; ?>
     <?= $sumando.$simbolo ?>
 <?php endforeach;?>
 
-<?= suma($_SESSION['sumandos'])?>
+<?= suma($sumandos)?>
 
 </h1>
 <a href="uno.php">Volver</a>

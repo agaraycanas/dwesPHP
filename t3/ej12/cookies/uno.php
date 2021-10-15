@@ -1,10 +1,14 @@
 <?php 
-setcookie('nMax');
-setcookie('n');
-setcookie('numeros');
+setcookie('sumandos');
+setcookie('nSumandos');
+setcookie('paso');
 ?>
 <form action="dos.php">
-	Indica el número de sumandos (2..15)
-	<input type="number" min="2" max="15" value="2" name="n"/><br/>
+	<p>Indica el número de sumandos (2..15)</p>
+	
+	<input type="number" min="2" max="15" value="3" name="nSumandos"/>
+	<br/>
+	
 	<input type="submit"/>
+
 </form>

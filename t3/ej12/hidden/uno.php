@@ -1,7 +1,3 @@
-<?php 
-session_start();
-session_unset();
-?>
 <form action="dos.php">
 	<p>Indica el número de sumandos (2..15)</p>
 	

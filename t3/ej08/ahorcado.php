@@ -86,7 +86,7 @@ function quitaDieresis($letra) {
  *
  * @param string $letra
  *        	la letra a normalizar
- * @return la letra original en minúscula y sin tildes ni diéresis
+ * @return $letra la letra original en minúscula y sin tildes ni diéresis
  *        
  */
 function normaliza($letra) {
@@ -114,7 +114,7 @@ function inicializarPalabraOculta() {
  * que la proporcionada pero con el carácter
  * '-' únicamente
  *
- * @return una palabra formada por $numCaractereres guiones
+ * @return $str una palabra formada por $numCaractereres guiones
  */
 function inicializarPalabraEnCurso($numCaracteres) {
 	$sol = '';
@@ -130,10 +130,8 @@ function inicializarPalabraEnCurso($numCaracteres) {
  *
  * @param string $pOrig
  *        	la palabra original oculta
- * @param unknown $pCurso
- *        	la palabra en curso, semidescubierta
- * @param unknown $letra
- *        	la letra a comprobar
+ * @param $pCurso Lp palabra en curso, semidescubierta
+ * @param $letra Lp letra a comprobar
  * @return string
  */
 function actualizarPalabraEnCurso($pOrig, $pCurso, $letra) {

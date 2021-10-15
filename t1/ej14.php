@@ -233,18 +233,6 @@ function continuar()
     fscanf(STDIN, "%s\n", $tecla);
 }
 
-// --------------------------------------
-// ---- FUNCIONES DAO -------------------
-// --------------------------------------
-function crearEmpleado(&$bd, $idEmp, $nombre, $apellido, $idDpt)
-{
-    $bd['emp'][0]['idemp'] = $idEmp;
-}
-
-function modificarEmpleado(&$bd, $idEmp, $nombre, $apellido, $idDpt)
-{}
-
-// etc...
 
 // ===================================================================
 // ===================================================================

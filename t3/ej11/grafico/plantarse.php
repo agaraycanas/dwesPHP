@@ -15,9 +15,10 @@ while ($status == 'seguir') {
     if ($puntuacionBanca > 7.5) { 
         $status = 'gano';
     }
-    else if ($puntuacionBanca >= $_SESSION['total'] || $puntuacionBanca == 7.5 )  { 
+    else if ($puntuacionBanca > $_SESSION['total'] || $puntuacionBanca == 7.5 )  { 
         $status = 'pierdo';
     }
+    $_SESSION['puntuacionBanca'] = $puntuacionBanca;
 }
 
 header('Location:tablero.php?status='.$status);

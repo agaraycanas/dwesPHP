@@ -25,11 +25,10 @@ function pintarRadio($nombre, $etiquetas, $seleccionado) {
 
 /**
  *
- * @param unknown $nombre
- *        	El name[] del grupo de checkboxes
- * @param unknown $etiquetas
+ * @param  $nombre string name del grupo de checkboxes
+ * @param  $etiquetas
  *        	array k => v de k(name) y v(etiquetas) de cada checkbox
- * @param unknown $seleccionados
+ * @param  $seleccionados
  *        	array v de v(name) de checkboxes seleccionados
  */
 function pintarCheckboxes($nombre, $etiquetas, $seleccionados = []) {
